@@ -1,0 +1,13 @@
+{
+  "falcon-7b": {"c": "#1E3F5A", "marker": "o"},
+  "falcon-7b-instruct": {"c": "#2E5F87", "marker": "o"},
+  "falcon-40b-instruct": {"c": "#3E7FB4", "marker": "o"},
+  "gpt-3.5-turbo-0125": {"c": "#8B4B8B", "marker": "s"},
+  "gpt-4": {"c": "#A96FA9", "marker": "s"},
+  "llama-2-7b-chat-hf": {"c": "#8B4513", "marker": "v"},
+  "llama-2-7b-hf": {"c": "#A0522D", "marker": "v"},
+  "llama-2-13b-chat-hf": {"c": "#B5651D", "marker": "v"},
+  "llama-2-13b-hf": {"c": "#CD853F", "marker": "v"},
+  "mistral-7b-instruct-v0.1": {"c": "#006400", "marker": "h"},
+  "mistral-7b-v0.1": {"c": "#228B22", "marker": "h"}
+}
