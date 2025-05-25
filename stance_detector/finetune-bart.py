@@ -16,14 +16,14 @@ id2labels = ['disagree', 'agree', 'neutral', 'unrelated']
 t = AutoTokenizer.from_pretrained('facebook/bart-large-mnli')
 template = "The stance of the statement is {}"
 
-df = pd.read_csv('train/labels.csv', index_col=0).reset_index(drop=True).astype(str)
+df = pd.read_csv('../data/train/all_labels.csv', index_col=0).reset_index(drop=True).astype(str)
 df.columns = ['text', 'label']
 df['text'][pd.isna(df['text'])] = 'empty'
 train_set = Dataset.from_pandas(df).shuffle(seed=42)
 
 save_sets = train_set.train_test_split(train_size=0.8, seed=42)
-save_sets['train'].save_to_disk('train/train_set')
-save_sets['test'].save_to_disk('test/test_set')
+save_sets['train'].save_to_disk('../data/stance_detector_eval/train/train_set')
+save_sets['test'].save_to_disk('../data/stance_detector_eval/test/test_set')
 
 
 def create_input_sequence(sample):
@@ -69,7 +69,7 @@ os.system('mkdir test_trainer logs')
 lr = 2e-5
 
 training_args = TrainingArguments(
-    output_dir = '../models/bart_main',
+    output_dir = 'bart_main',
     max_steps=1750,
     per_device_train_batch_size=4,
     per_device_eval_batch_size=16,
@@ -97,8 +97,6 @@ trainer = Trainer(
       compute_metrics=compute_metrics,
 
 )
-
-
 
 
 trainer.train()

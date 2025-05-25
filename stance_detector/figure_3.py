@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 from analysis.helper_functions import confidence_intervals
 
-with open('../data/eval/stats.json', 'r') as infile: conf_stats = json.load(infile)
+with open('../data/stance_detector_eval/stats.json', 'r') as infile: conf_stats = json.load(infile)
 df = pd.read_csv('../data/eval/eval_df.csv', index_col=0)
 
 conf_intervals = {c : {x : [] for x in conf_stats[c].keys()} for c in conf_stats.keys()}

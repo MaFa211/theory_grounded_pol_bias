@@ -24,7 +24,7 @@ def confidence_intervals(stats):
     return lower, upper
 
 
-testset = load_from_disk('test_set').to_pandas()
+testset = load_from_disk('../data/stance_detector_eval/test/test_set').to_pandas()
 
 zero_shot_model =  BartForSequenceClassification.from_pretrained('facebook/bart-large-mnli')
 model = BartForSequenceClassification.from_pretrained('bart_main')

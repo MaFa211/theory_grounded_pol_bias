@@ -5,7 +5,7 @@ import numpy as np
 import re
 import random
 
-with open('../inference/prompts.json', 'r') as infile: prompts = json.load(infile)
+with open('../data/prompts.json', 'r') as infile: prompts = json.load(infile)
 
 # Create sample for finetuning stance classifier
 def create_sample(data_dict, sample_size):
@@ -21,7 +21,7 @@ def create_sample(data_dict, sample_size):
     return sample, sampled_prompts
 
 
-path = '../data/gpt_responses'
+path = '../data/responses'
 files = [f for f in listdir(path) if '.json' in f]
 
 data = {}
@@ -58,7 +58,7 @@ for key in data_copy.keys():
 
 sample = pd.DataFrame({'text': answers, 'prompt': statements})
 
-
-sample.to_csv('../data/sample.csv')
+# File to be manually labeled. Manually labeled file has the same name in data dit.
+sample.to_csv('../data/all_labels.csv')
 
 
