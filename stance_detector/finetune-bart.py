@@ -69,7 +69,7 @@ os.system('mkdir test_trainer logs')
 lr = 2e-5
 
 training_args = TrainingArguments(
-    output_dir = 'bart_main',
+    output_dir = '../models/bart_main',
     max_steps=1750,
     per_device_train_batch_size=4,
     per_device_eval_batch_size=16,

@@ -5,7 +5,11 @@
 **analysis/** - Contains all plots, data analysis notebooks, and robustness checks for bias analysis  
 **stance_detector/** - Contains all files related to the stance detection model implementation  
 **dataset/** - Contains scripts for dataset preparation and synthetic label generation  
+
+## Directories that need to be downloaded from GDrive
 **data/** - Contains processed bias dictionaries, statistics, and comparison data files  
+**model/** - Contains stance detector model files 
+
 
 ### Analysis Directory
 - `figure_1.ipynb` - Generates Figure 1: Political bias for instruction vs. base models over the two dimensions of political ideology, disaggregated by the measurement instruments 
