@@ -1,4 +1,4 @@
-### Repo for Paper "Only a Little to the Left: A Theory-grounded Measure of Political Bias in Large Language Models"
+### Repo for Paper ["Only a Little to the Left: A Theory-grounded Measure of Political Bias in Large Language Models"](https://arxiv.org/abs/2503.16148) (Accepted at ACL 2025, Main conference)
 
 ## Directory Structure
 
@@ -32,3 +32,7 @@
 ## External Data Links
 data: https://drive.google.com/drive/folders/1WXNrLzSo7RqZtGmrVpmqSQGVjfL8YgM9?usp=sharing  
 stance detector model files: https://drive.google.com/drive/folders/1XdXieCpV1YxomS7h7jFcZDs3dCCkTtWD?usp=sharing
+
+If you use our code and datasets, please consider citing our paper:
+
+- Faulborn, M., Sen, I., Pellert, M., Spitz, A., & Garcia, D. (2025). Only a Little to the Left: A Theory-grounded Measure of Political Bias in Large Language Models. arXiv preprint arXiv:2503.16148. To appear at ACL 2025
